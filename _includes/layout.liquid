@@ -11,12 +11,26 @@ title: 11ty Boilerplate
   <link rel="stylesheet" href="/styles/screen.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
-    </ul>
-  </nav>
+  <header class="site-header">
+    <div class="inner">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/thermal/">Thermal cup</a></li>
+          <li><a href="/tablet/">Tablet</a></li>
+          <li><a href="/earbuds/">Earbuds</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main inner">
     {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 My Everyday Carry</p>
+  </footer>
+
 </body>
 </html>
